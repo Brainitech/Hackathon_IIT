@@ -1,0 +1,6 @@
+Temperature Alert Agent:
+
+Your challenge is to create the Temperature Alert Agent using uAgent library, a tool that:
+a) Connects to afree weather API to fetch real-timme temperatures for the specified location.
+b) Lets users set their preferred temperature range (e.g., a minimim and maximum temerature) and location.
+c) Sends an alert/notification to the user when the current temperature in their chosen location goes below the minimim or avove the maximum threshold they've set.
