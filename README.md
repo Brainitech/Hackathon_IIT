@@ -1,6 +1,9 @@
 Required dependencies need to be installed on the device:
+
 1.uagents
+
 2.response
+
 3.json lib
 
 Able to to run py scripts
