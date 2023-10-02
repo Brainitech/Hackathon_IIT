@@ -29,7 +29,11 @@ Frontend must contain:
 
 Front end structure:
 1st field: location with drop down menu
+
 2nd field: default values (yes or no)
+
 3rd field: (if 2nd field is no) max and min temp
+
 4th field/button: start
+
 bottom of the page: credits/details link to source code.
