@@ -19,6 +19,8 @@ Perms must be granted for
 20% idea to be run on localhost/online domain
 10% idea to be run on mobile as a apk installer
 
+>>DECIDED TO MAKE UI USING HTML/CSS AND HOST IT     ON GITHUB.IO
+
 Frontend must contain:
 1. Temperature scale
 2. Location list (searchable)
