@@ -15,11 +15,11 @@ Perms must be granted for
 2. Notification deamon
 3. Display on top
 
-70% idea to be run on windows/mac/linux as a software
+>>70% idea to be run on windows/mac/linux as a software
 20% idea to be run on localhost/online domain
 10% idea to be run on mobile as a apk installer
 
->>DECIDED TO MAKE UI USING HTML/CSS AND HOST IT     ON GITHUB.IO
+**DECIDED TO MAKE UI USING HTML/CSS AND HOST IT     ON GITHUB.IO**
 
 Frontend must contain:
 1. Temperature scale
@@ -33,6 +33,7 @@ Frontend must contain:
      c. High (silent pop-up if screen on, else pop-up with sound)
 
 Front end structure:
+
 1st field: location with drop down menu
 
 2nd field: default values (yes or no)
