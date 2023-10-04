@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Alert Agent</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Alert Agent</h1>
+        <form id="temperatureForm">
+            <label for="location">Location:</label>
+            <select id="location" name="location" required>
+                <!-- Populate this dropdown with your list of cities -->
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+                <!-- Add more options here -->
+            </select>
+
+            <label for="useDefault">Use Default Values:</label>
+            <input type="radio" id="useDefault" name="useDefault" value="yes" checked> Yes
+            <input type="radio" name="useDefault" value="no"> No
+
+            <div id="customTempFields">
+                <label for="minTemp">Minimum Temperature (°C):</label>
+                <input type="text" id="minTemp" name="minTemp">
+
+                <label for="maxTemp">Maximum Temperature (°C):</label>
+                <input type="text" id="maxTemp" name="maxTemp">
+            </div>
+
+            <label for="alertPriority">Alert Priority:</label>
+            <select id="alertPriority" name="alertPriority">
+                <option value="minimum">Minimum (silent notification)</option>
+                <option value="moderate">Moderate (notification with sound)</option>
+                <option value="high">High (silent pop-up if screen on, else pop-up with sound)</option>
+            </select>
+
+            <button type="submit">Start</button>
+        </form>
+        <p id="alertMessage"></p>
+        <p>For details and source code, visit: <a href="#">Your Link</a></p>
+    </div>
+
+    <script>
+        // Add your JavaScript code here to handle form submission and alerts
+        document.getElementById('temperatureForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const location = document.getElementById('location').value;
+            const useDefault = document.querySelector('input[name="useDefault"]:checked').value;
+            const minTemp = parseFloat(document.getElementById('minTemp').value);
+            const maxTemp = parseFloat(document.getElementById('maxTemp').value);
+            const alertPriority = document.getElementById('alertPriority').value;
+            const alertMessage = document.getElementById('alertMessage');
+
+            // Add logic to check temperature and display alerts here
+        });
+    </script>
+</body>
+</html>
